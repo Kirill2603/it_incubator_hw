@@ -2,6 +2,7 @@
   display: flex;
   align-items: flex-end;
   padding: 1rem;
+  font-weight: 500;
 }
 .Message img {
   width: 50px;
@@ -16,6 +17,7 @@
   position: relative;
   display: flex;
   align-items: inherit;
+  padding-bottom: 5px;
   color: rgb(0, 0, 0);
   border-radius: 1rem 1rem 1rem 0;
   max-width: 60%;
@@ -27,6 +29,7 @@
   content: "";
   position: relative;
   right: 1.2rem;
+  bottom: -5px;
   border: 1rem solid silver;
   border-width: 0 0 20px 20px;
   border-color: transparent transparent rgb(240, 240, 240) transparent;

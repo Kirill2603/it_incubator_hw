@@ -1,14 +1,23 @@
 import React from "react";
 import Message from "./Message";
+import AlternativeMessage from "./AlternativeMessage";
 
 const messageData = {
   avatar:
     "https://sun9-74.userapi.com/Ph-WiuOtF985il9AvN9JqiCWedmHtSGSSTXrSA/ltEB2Z2-YO4.jpg",
-  name: "Some Name",
+  name: "Kitty",
   message:
-    "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorum ad iure expedita voluptates! Beatae, porro corrupti. Eius id deserunt illum cum possimus unde molestias delectus quibusdam. Alias explicabo sint quia?",
+    "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorum ad iure expedita voluptates!",
   time: "22:00",
 };
+
+const alternativeMessageData = {
+    avatar: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjALj6QDBDcZ37pD3z4UnTG5xKpwAozbCjjw&usqp=CAU",
+    name: "Batman",
+    message: "Hello",
+    time: "22:01"
+}
+
 
 function HW1() {
   return (
@@ -20,14 +29,14 @@ function HW1() {
         message={messageData.message}
         time={messageData.time}
       />
-      <Message
-        avatar={messageData.avatar}
-        name={messageData.name}
-        message={messageData.message}
-        time={messageData.time}
-      />
       {/*для личного творчества, могу проверить*/}
-      {/*<AlternativeMessage/>*/}
+
+      <AlternativeMessage
+          avatar={alternativeMessageData.avatar}
+          name={alternativeMessageData.name}
+          message={alternativeMessageData.message}
+          time={alternativeMessageData.time}
+      />
     </div>
   );
 }

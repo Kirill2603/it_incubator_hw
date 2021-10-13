@@ -1,0 +1,48 @@
+.Message {
+    display: flex;
+    align-items: flex-end;
+    flex-direction: row-reverse;
+    padding: 1rem;
+    font-weight: 500;
+}
+.Message img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 1px solid silver;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.StyleContent {
+    padding-left: 1rem;
+    position: relative;
+    display: flex;
+    align-items: inherit;
+    color: rgb(0, 0, 0);
+    border-radius: 1rem 1rem 0rem 1rem;
+    max-width: 60%;
+    background: rgb(100, 199, 76);
+    box-shadow: 0 0 10px silver;
+    padding-bottom: 5px;
+}
+
+.StyleContent::after {
+    content: "";
+    position: relative;
+    left: 1rem;
+    bottom: -5px;
+    transform: rotate(90deg);
+    border: 1rem solid silver;
+    border-width: 0 0 20px 20px;
+    border-color: transparent transparent rgb(100, 199, 76) transparent;
+}
+
+.Name {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: midnightblue;
+}
+.Time {
+    /*margin-right: 12px;*/
+}
