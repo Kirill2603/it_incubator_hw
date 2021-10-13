@@ -22,6 +22,7 @@ const alternativeMessageData = {
 function HW1() {
   return (
     <div>
+        <hr/>
       homeworks 1{/*should work (должно работать)*/}
       <Message
         avatar={messageData.avatar}
@@ -37,6 +38,8 @@ function HW1() {
           message={alternativeMessageData.message}
           time={alternativeMessageData.time}
       />
+        <hr/>
+        <hr/>
     </div>
   );
 }
