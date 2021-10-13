@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/it_incubator_hw/static/css/main.21c63c34.chunk.css",
+    "main.js": "/it_incubator_hw/static/js/main.8b820638.chunk.js",
+    "main.js.map": "/it_incubator_hw/static/js/main.8b820638.chunk.js.map",
+    "runtime-main.js": "/it_incubator_hw/static/js/runtime-main.d41c51ec.js",
+    "runtime-main.js.map": "/it_incubator_hw/static/js/runtime-main.d41c51ec.js.map",
+    "static/js/2.6e11e47e.chunk.js": "/it_incubator_hw/static/js/2.6e11e47e.chunk.js",
+    "static/js/2.6e11e47e.chunk.js.map": "/it_incubator_hw/static/js/2.6e11e47e.chunk.js.map",
+    "index.html": "/it_incubator_hw/index.html",
+    "static/css/main.21c63c34.chunk.css.map": "/it_incubator_hw/static/css/main.21c63c34.chunk.css.map",
+    "static/js/2.6e11e47e.chunk.js.LICENSE.txt": "/it_incubator_hw/static/js/2.6e11e47e.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.d41c51ec.js",
+    "static/js/2.6e11e47e.chunk.js",
+    "static/css/main.21c63c34.chunk.css",
+    "static/js/main.8b820638.chunk.js"
+  ]
+}
