@@ -1,3 +1,44 @@
-.someClass {
+.Affairs {
+    background-color: rgba(186, 202, 239, 0.55);
+    border-radius: 10px;
+    padding: 20px;
+    width: min-content;
+}
+.ButtonBlock {
+    margin-top: 10px;
+    display: flex;
+}
+.ButtonBlock button {
+    margin-left: 5px;
+    margin-right: 5px;
+    padding-left: 8px;
+    padding-right: 8px;
+    font-size: 18px;
+    border: 0px;
+    border-radius: 5px;
+    background-color: #86a6ee;
+}
+.ButtonBlock button:hover {
+    box-shadow: 0 0 5px rgba(0,0,0,0.5);
+    background-color: #5e86ec;
+}
 
+.Affair {
+    display: flex;
+    flex-direction: row;
+    padding: 5px;
+}
+.Affair button {
+    background-color: #f84f72;
+    border: 0px;
+    border-radius: 5px;
+}
+.Affair button:hover {
+    box-shadow: 0 0 5px rgba(0,0,0,0.5);
+    background-color: #fa325b;
+}
+.Affair span {
+    font-size: 18px;
+    flex:  1em;
+    font-weight: 500;
 }
