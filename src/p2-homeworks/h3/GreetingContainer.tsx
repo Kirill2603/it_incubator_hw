@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import React, {ChangeEvent,KeyboardEvent, useState} from 'react'
 import Greeting from './Greeting'
 import {UserType} from "./HW3";
 
@@ -14,17 +14,32 @@ type GreetingContainerPropsType = {
 // уровень локальной логики
 const GreetingContainer: React.FC<GreetingContainerPropsType> = ({users, addUserCallback}) => { // деструктуризация пропсов
     const [name, setName] = useState<string>('') // need to fix any
-    const [error, setError] = useState<any>('') // need to fix any
+    const [error, setError] = useState<string>('') // need to fix any
 
-    const setNameCallback = (name: string) => { // need to fix any
-        setName(name) // need to fix
+    const setNameCallback = (e: ChangeEvent<HTMLInputElement>) => { // need to fix any
+        const newName = e.currentTarget.value
+        if (newName) {
+            setName(newName)
+            error && setError('')
+        } else {
+            name && setName('')
+            setError('need to enter name')
+        }
     }
-    const addUser = (name: string) => {
+
+    const addUser = () => {
         addUserCallback(name)
-        alert(`Hello ${name} !`) // need to fix
+        alert(`Hello ${name} !`)
+        setName('')
     }
 
-    const totalUsers = users.length // need to fix
+    const onEnter = (e: KeyboardEvent<HTMLInputElement>) => {
+        if (e.key === "Enter" && name) {
+            addUser()
+        }
+    }
+
+    const totalUsers = users.length
 
     return (
         <Greeting
@@ -33,6 +48,7 @@ const GreetingContainer: React.FC<GreetingContainerPropsType> = ({users, addUser
             addUser={addUser}
             error={error}
             totalUsers={totalUsers}
+            onEnter={onEnter}
         />
     )
 }
