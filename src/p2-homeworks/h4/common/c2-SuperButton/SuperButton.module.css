@@ -1,7 +1,48 @@
 .default {
-
+    background-color: dodgerBlue;
+    border: 2px solid dodgerBlue;
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+    align-self: center;
+    font-weight: 400;
+    line-height: 1;
+    margin: 10px;
+    padding: 13px;
+    text-decoration: none;
+    text-align: center;
+    font-size: 15px;
+}
+.default:hover{
+    border-color: dodgerBlue;
+    transition: all 150ms ease-in-out;
+    box-shadow:0 0 8px 0 dodgerBlue;
+}
+.default:disabled{
+    opacity: 0.65;
+}
+.default:disabled:hover{
+    box-shadow: none;
+    cursor: default;
 }
 
 .red {
-    background: red;
+    background-color: #fc4c4c;
+    border: 2px solid #fc4c4c;
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+    align-self: center;
+    font-weight: 400;
+    line-height: 1;
+    margin: 10px;
+    padding: 13px;
+    text-decoration: none;
+    text-align: center;
+    font-size: 15px;
+}
+.red:hover{
+    border-color: #fc4c4c;
+    transition: all 150ms ease-in-out;
+    box-shadow:0 0 8px 0 #fc4c4c;
 }

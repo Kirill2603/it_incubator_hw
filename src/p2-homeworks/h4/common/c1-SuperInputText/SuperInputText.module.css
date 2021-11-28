@@ -1,10 +1,38 @@
 .superInput {
+    border:2px solid #aaa;
+    border-radius:4px;
+    margin:8px 0;
+    outline:none;
+    padding:8px;
+    box-sizing:border-box;
+    transition:.3s;
+}
 
+.superInput:hover {
+    border-color:dodgerBlue;
+    box-shadow:0 0 8px 0 dodgerBlue;
+}
+.superInput:focus{
+    border-color:dodgerBlue;
+    box-shadow:0 0 8px 0 dodgerBlue;
 }
 
 .errorInput {
-    border: 3px solid lime;
-    background: red;
+    border:2px solid #fc4c4c;
+    border-radius:4px;
+    margin:8px 0;
+    outline:none;
+    padding:8px;
+    box-sizing:border-box;
+    transition:.3s;
+}
+.errorInput:hover {
+    border-color: #fc4c4c;
+    box-shadow:0 0 8px 0 #fc4c4c;
+}
+.errorInput:focus{
+    border-color: #fc4c4c;
+    box-shadow:0 0 8px 0 #fc4c4c;
 }
 
 .error {
