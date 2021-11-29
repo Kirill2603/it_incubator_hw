@@ -1,11 +1,11 @@
 import React from 'react'
 import Header from './Header'
 import RoutesFun from './Routes'
-import {BrowserRouter} from "react-router-dom";
+import {HashRouter} from "react-router-dom";
 
 function HW5() {
     return (
-        <BrowserRouter>
+        <HashRouter>
         <div>
             {/*в gh-pages лучше работает HashRouter*/}
             {/*<HashRouter>*/}
@@ -16,7 +16,7 @@ function HW5() {
 
             {/*</HashRouter>*/}
         </div>
-            </BrowserRouter>
+            </HashRouter>
     )
 }
 

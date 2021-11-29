@@ -1,12 +1,11 @@
 import React from 'react'
-import { Routes, Route} from "react-router-dom";
+import {Routes, Route} from "react-router-dom";
 import PreJunior from "./pages/PreJunior";
 import Error404 from "./pages/Error404";
 import Junior from "./pages/Junior";
 import JuniorPlus from "./pages/juniorPlus";
 
 export const PATH = {
-    APP: "it_incubator_hw",
     PRE_JUNIOR: 'pre-junior',
     JUNIOR: 'junior',
     JUNIOR_PLUS: 'junior-plus',
@@ -18,16 +17,15 @@ function RoutesFun() {
         <div>
             <Routes>
 
-            {/*в начале мы попадаем на страницу '/' и переходим сразу на страницу PRE_JUNIOR*/}
-            {/*exact нужен чтоб указать полное совподение (что после '/' ничего не будет)*/}
-            <Route path='/' element={<PreJunior />}>
-                <Route path={PATH.APP + PATH.PRE_JUNIOR} element={<PreJunior />}/>
-                <Route path={PATH.APP + PATH.JUNIOR} element={<Junior />}/>
-                <Route path={PATH.APP + PATH.JUNIOR_PLUS} element={<JuniorPlus />}/>
-            </Route>
+                {/*в начале мы попадаем на страницу '/' и переходим сразу на страницу PRE_JUNIOR*/}
+                {/*exact нужен чтоб указать полное совподение (что после '/' ничего не будет)*/}
+                <Route path='#' element={<PreJunior/>}/>
+                <Route path={PATH.PRE_JUNIOR} element={<PreJunior/>}/>
+                <Route path={PATH.JUNIOR} element={<Junior/>}/>
+                <Route path={PATH.JUNIOR_PLUS} element={<JuniorPlus/>}/>
 
-            {/*у этого роута нет пути, он отрисуется если пользователь захочет попасть на несуществующую страницу*/}
-            <Route path='*' element={<Error404/>}/>
+                {/*у этого роута нет пути, он отрисуется если пользователь захочет попасть на несуществующую страницу*/}
+                <Route path='*' element={<Error404/>}/>
 
             </Routes>
         </div>
