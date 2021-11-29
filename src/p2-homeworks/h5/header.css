@@ -1,0 +1,31 @@
+.Header button {
+    padding: 5px;
+    font-size: 18px;
+}
+.active button{
+    font-weight: 600;
+}
+.NavLinkWrapper {
+    display: flex;
+    align-items: center;
+    transform: translate(-330px);
+    transition-duration: 200ms;
+}
+.NavLinkWrapper:hover {
+     transform: translate(0);
+    transition-duration: 200ms;
+ }
+
+.Levels {
+    padding: 10px;
+    color: dodgerblue;
+    font-size: 20px;
+}
+.Levels:after {
+    content: "";
+    border: solid dodgerblue;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+    transform: rotate(-45deg);
+}

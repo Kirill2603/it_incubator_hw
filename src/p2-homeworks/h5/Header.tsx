@@ -1,14 +1,19 @@
 import React from 'react'
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import {PATH} from "./Routes";
-
-
+import './header.css'
+import SuperButton from "../h4/common/c2-SuperButton/SuperButton";
 function Header() {
+
     return (
-        <div>
-            <Link to={PATH.PRE_JUNIOR}>PreJunior</Link>
-            <Link to={PATH.JUNIOR}>Junior</Link>
-            <Link to={PATH.JUNIOR_PLUS}>JuniorPlus</Link>
+
+        <div className='Header'>
+            <div className='NavLinkWrapper'>
+                <NavLink to={PATH.PRE_JUNIOR} ><SuperButton>PreJunior</SuperButton></NavLink>
+                <NavLink to={PATH.JUNIOR} ><SuperButton>Junior</SuperButton></NavLink>
+                <NavLink to={PATH.JUNIOR_PLUS} ><SuperButton>JuniorPlus</SuperButton></NavLink>
+                <div className='Levels'>Levels</div>
+            </div>
 
         </div>
     )
