@@ -6,27 +6,25 @@ import Junior from "./pages/Junior";
 import JuniorPlus from "./pages/juniorPlus";
 
 export const PATH = {
-    PRE_JUNIOR: '/pre-junior',
-    JUNIOR: '/junior',
-    JUNIOR_PLUS: '/junior-plus',
+    APP: "it_incubator_hw",
+    PRE_JUNIOR: 'pre-junior',
+    JUNIOR: 'junior',
+    JUNIOR_PLUS: 'junior-plus',
 
 }
 
 function RoutesFun() {
     return (
         <div>
-            {/*Switch выбирает первый подходящий роут*/}
             <Routes>
 
             {/*в начале мы попадаем на страницу '/' и переходим сразу на страницу PRE_JUNIOR*/}
             {/*exact нужен чтоб указать полное совподение (что после '/' ничего не будет)*/}
-            <Route path='/' element={<PreJunior />} />
-
-
-            <Route path={PATH.PRE_JUNIOR} element={<PreJunior />}/>
-            <Route path={PATH.JUNIOR} element={<Junior />}/>
-            <Route path={PATH.JUNIOR_PLUS} element={<JuniorPlus />}/>
-                // add routes
+            <Route path='/' element={<PreJunior />}>
+                <Route path={PATH.APP + PATH.PRE_JUNIOR} element={<PreJunior />}/>
+                <Route path={PATH.APP + PATH.JUNIOR} element={<Junior />}/>
+                <Route path={PATH.APP + PATH.JUNIOR_PLUS} element={<JuniorPlus />}/>
+            </Route>
 
             {/*у этого роута нет пути, он отрисуется если пользователь захочет попасть на несуществующую страницу*/}
             <Route path='*' element={<Error404/>}/>
