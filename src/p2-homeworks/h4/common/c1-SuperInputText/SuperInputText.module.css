@@ -42,7 +42,7 @@
 
 .spanClassName {
     display: inline-block;
-    width: 15%;
+    min-width: 150px;
     border:2px solid #aaa;
     border-radius:4px;
     margin:8px 0;
