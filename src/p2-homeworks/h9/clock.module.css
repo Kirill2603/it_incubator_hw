@@ -1,0 +1,13 @@
+.clock {
+    display: inline-block;
+    font-family: 'Orbitron', sans-serif;
+    color: #5e86ec;
+    font-size: 36px;
+}
+.date {
+    padding-left: 20px;
+    display: inline-block;
+    font-family: 'Orbitron', sans-serif;
+    color: #214dbe;
+    font-size: 36px;
+}
