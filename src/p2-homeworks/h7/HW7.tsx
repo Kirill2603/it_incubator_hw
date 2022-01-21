@@ -13,7 +13,9 @@ function HW7() {
             homeworks 7
 
             {/*should work (должно работать)*/}
-            <div>
+
+            <div style={{display: 'flex', alignItems: 'center'}}>
+            <div >
                 <SuperSelect
                     options={arr}
                     value={value}
@@ -28,7 +30,7 @@ function HW7() {
                     onChangeOption={onChangeOption}
                 />
             </div>
-
+            </div>
             <hr/>
             {/*для личного творчества, могу проверить*/}
             {/*<AlternativeSuperSelect/>*/}
